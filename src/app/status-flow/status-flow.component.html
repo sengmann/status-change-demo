@@ -1,6 +1,6 @@
 <div *ngFor="let section of statusStringOptions; let i = index;">
   <mat-form-field>
-    <mat-label>step {{ i + 1 }}</mat-label>
+    <mat-label>step {{ i + 1 }} <!-- show logo here --></mat-label>
     <mat-select [value]="statusArray[i]" (valueChange)="setStatus($event, i)">
       <mat-option *ngFor="let option of section.split(',')" [value]="option">{{option}}</mat-option>
     </mat-select>
