@@ -1,0 +1,9 @@
+<h1>
+  Demo of status flow
+</h1>
+<div>
+Status String <input type="text" [(ngModel)]="status">
+</div>
+<div>
+  <app-status-flow [statusString]="status" [statusStringOptions]="statusStringOptions" (changes)="status = $event"></app-status-flow>
+</div>
