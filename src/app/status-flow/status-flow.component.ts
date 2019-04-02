@@ -37,8 +37,8 @@ export class StatusFlowComponent implements OnChanges {
     const statusOptionsArray: string[][] = statusStringOptions.map(x => x.split(','));
 
     return [
-      this.isFirstOptionSelected(statusArray[1], statusOptionsArray[1]) ? statusArray[0] : statusOptionsArray[0][0],
-      this.isFirstOptionSelected(statusArray[2], statusOptionsArray[2]) ? statusArray[1] : statusOptionsArray[1][0],
+      this.isFirstOptionSelected(statusArray[1], statusOptionsArray[1]) ? statusArray[0] : statusOptionsArray[0][2],
+      this.isFirstOptionSelected(statusArray[2], statusOptionsArray[2]) ? statusArray[1] : statusOptionsArray[1][2],
       statusArray[2]];
   }
 
